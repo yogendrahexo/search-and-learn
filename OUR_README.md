@@ -98,3 +98,6 @@ python evaluation/evaluate_hf.py \
 - **`VOTING_N`**: A space-separated string of integers representing the values of 'n' (number of completions) to evaluate. For example, "1 2 4 8 16" will evaluate the accuracy using the single best completion, the majority vote of the top 2 completions, the top 4, and so on.
 
 The script will output the accuracy for each value of `n` specified in `VOTING_N`.
+
+The results will be displayed as follows:
+![image](https://github.com/user-attachments/assets/29ab7685-0822-48f0-bf90-095890ddc6bd)
