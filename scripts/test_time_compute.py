@@ -51,6 +51,8 @@ def main():
         enable_prefix_caching=True,
         seed=config.seed,
         tensor_parallel_size=num_gpus,
+        # dtype="float16", # USE THIS IF USING T4 GPUS
+        # max_model_len=config.max_model_len, # USE THIS TO REDUCE KV CACHE MEMORY SIZE (gpu_memory_utilization = llm + kv cache)
     )
     prm = load_prm(config)
 
@@ -63,6 +65,8 @@ def main():
         desc="Running search",
         load_from_cache_file=False,
     )
+
+    torch.cuda.empty_cache()
 
     dataset = score(dataset, config)
 
