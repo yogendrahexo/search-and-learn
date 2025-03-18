@@ -1,6 +1,18 @@
 ## Replicating our test-time compute results
 
-The [`recipes` README](recipes/README.md) includes launch commands and config files in order to replicate our results.
+### System Setup for Experiment
+
+- **Instance:** g5.12xlarge  
+- **GPUs:** 4 × 24GB A10G  
+- **Search Batch Size:** 4  
+- **PRM Batch Size:** 4  
+- **Max Tokens:** 2048  
+- **Model Length:** 2048  
+- **N:** 16  
+- **Seed:** 0  
+
+
+
 
 To get started quickly, we recommend using the provided YAML files in the `recipes/` directory. These files contain all the necessary parameters for running the different search algorithms (Best-of-N, beam search, DVTS).
 
