@@ -1,6 +1,24 @@
 ## Replicating our test-time compute results
 
-The [`recipes` README](recipes/README.md) includes launch commands and config files in order to replicate our results.
+### System Setup for Experiment
+
+- **Instance:** g4dn.2xlarge
+- **GPUs:** 1 × 16GB T4
+- **Search Batch Size:** 2
+- **PRM Batch Size:** 2
+- **Max Tokens:** 2048
+- **Model Length:** 2048
+- **N:** 8
+- **Seed:** 0
+
+## Setup
+
+```
+!git clone https://github.com/yogendrahexo/search-and-learn.git
+%cd search-and-learn
+!git checkout t4
+!pip install -e .[dev]
+```
 
 To get started quickly, we recommend using the provided YAML files in the `recipes/` directory. These files contain all the necessary parameters for running the different search algorithms (Best-of-N, beam search, DVTS).
 
