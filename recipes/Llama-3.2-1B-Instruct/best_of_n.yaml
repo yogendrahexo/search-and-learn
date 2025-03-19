@@ -1,14 +1,16 @@
 # refer to src/sal/config.py for more options
 
 approach: best_of_n
-n: 16
+n: 8
 search_batch_size: 4
 sort_completed: true
 filter_duplicates: true
-num_samples: 50
+num_samples: 1
 seed: 0
-gpu_memory_utilization: 0.2
+gpu_memory_utilization: 0.25
 # push_to_hub: true
 # hub_dataset_id: yogendrahexo/Llama-3.2-1B-Instruct-dvts-completions
 # hub_dataset_private: true
 # overwrite_hub_revision: true
+
+prm_path: Skywork/Skywork-o1-Open-PRM-Qwen-2.5-1.5B

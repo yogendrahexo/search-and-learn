@@ -51,8 +51,8 @@ def main():
         enable_prefix_caching=True,
         seed=config.seed,
         tensor_parallel_size=num_gpus,
-        # dtype="float16", # USE THIS IF USING T4 GPUS
-        # max_model_len=config.max_model_len, # USE THIS TO REDUCE KV CACHE MEMORY SIZE (gpu_memory_utilization = llm + kv cache)
+        dtype="float16", # USE THIS IF USING T4 GPUS
+        max_model_len=2048, # USE THIS TO REDUCE KV CACHE MEMORY SIZE (gpu_memory_utilization = llm + kv cache)
     )
     prm = load_prm(config)
 
