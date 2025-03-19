@@ -7,7 +7,7 @@ search_batch_size: 1 # DO NOT CHANGE!
 num_samples: 1 # REMOVE THIS LINE TO RUN ON THE WHOLE DATASET
 seed: 0
 num_iterations: 10
-gpu_memory_utilization: 0.25
+gpu_memory_utilization: 0.3
 # push_to_hub: true
 # hub_dataset_id: yogendrahexo/Llama-3.2-1B-Instruct-dvts-completions
 # hub_dataset_private: true
