@@ -12,6 +12,13 @@
 - **Seed:** 0  
 
 
+## Setup 
+```
+!git clone https://github.com/yogendrahexo/search-and-learn.git
+%cd search-and-learn
+!git checkout test
+!pip install -e .[dev]
+```
 
 
 To get started quickly, we recommend using the provided YAML files in the `recipes/` directory. These files contain all the necessary parameters for running the different search algorithms (Best-of-N, beam search, DVTS).
