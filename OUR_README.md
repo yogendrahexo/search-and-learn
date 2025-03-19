@@ -25,6 +25,11 @@ The YAML files provide a wide range of configuration options. You can modify the
 - `num_samples`: The number of problems to solve from the dataset.
 - `seed`: The random seed for reproducibility.
 - `gpu_memory_utilization`: Fraction of GPU memory to allocate to vLLM.
+- `prm_path`: Path to the Preference Reward Model (PRM). Available options:
+  - `Skywork/Skywork-o1-Open-PRM-Qwen-2.5-1.5B` (recommended for 16GB GPUs)
+  - `Skywork/Skywork-o1-Open-PRM-Qwen-2.5-7B`
+  - `peiyi9979/math-shepherd-mistral-7b-prm`
+  - `RLHFlow/Llama3.1-8B-PRM-Deepseek-Data`
 - And many more (see `src/sal/config.py` for the complete list).
 
 **Pushing Results to the Hugging Face Hub (Optional):**
